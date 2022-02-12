@@ -99,14 +99,14 @@ body.mobile-menu-activated .mobile-menu-btn > span:after {
 }
 
 .main-banner {
-  background: #90d3e6 url("../images/banner.jpg") no-repeat bottom center;
+  background: #fffaf8 url("../images/banner.png") no-repeat bottom center;
   min-height: 100vh;
   position: relative;
   padding: 150px 0;
 }
 .main-banner .banner-content {
   min-height: calc(100vh - 300px);
-  text-align: right;
+  text-align: center;
 }
 .main-banner .banner-content h1 {
   font-weight: 700;
@@ -185,6 +185,12 @@ section.page-block:nth-child(odd) {
   background-color: #f5f5f5;
 }
 
+.arrow-bg {
+  background-image: url("../images/arrow-lg.png");
+  background-repeat: no-repeat;
+  background-position: right 200px;
+}
+
 .section-title {
   margin-bottom: 30px;
   font-size: 2.6rem;
@@ -228,11 +234,6 @@ section.page-block:nth-child(odd) {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  section.page-block:nth-child(odd) .row {
-    flex-direction: row-reverse;
-  }
-}
 @media screen and (max-width: 900px) {
   .section-title {
     font-size: 2rem;
@@ -269,33 +270,17 @@ section.page-block:nth-child(odd) {
     min-height: auto !important;
   }
 }
-@keyframes wifiAnim {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-20px);
-  }
+.yellow-text.has-bracket {
+  padding: 30px 30px 30px 50px;
+  position: relative;
 }
-.wifi-icon {
-  font-size: 2rem;
-  color: #f9af2e;
-  animation: wifiAnim 1s infinite alternate;
-}
-
-.wifi-password {
-  font-size: 1.2rem;
-}
-.wifi-password span {
-  display: inline-block;
-  padding: 5px 14px;
-  background-color: #098536;
-  color: #ffffff;
-  margin-right: 15px;
-  border-radius: 5px;
-}
-.wifi-password span i {
-  margin-left: 10px;
+.yellow-text.has-bracket:before {
+  content: "{";
+  display: block;
+  position: absolute;
+  left: -15px;
+  font-size: 7rem;
+  transform: translateY(-26%);
 }
 
 /*# sourceMappingURL=style.css.map */
